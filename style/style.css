@@ -1,5 +1,139 @@
-.nav-bar{
-    width: 1440px;
-    height: 220px;
-    background-color: #fa0606;
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.nav-bar{
+    width: 1349x;
+    height: 220px;
+    /* background-color: rgb(238, 247, 24
+    7); */
+    position: relative;
+    overflow: hidden;
+}
+.nav-bar > * {
+    position: absolute;
+    left: 110px;
+}
+.Group-16 {
+    width: 86px;
+    height: 31px;
+    object-fit: contain;
+    position: absolute;
+    top: 32px;
+    
+  }
+
+  .welcome_back_user {
+    width: 258px;
+    height: 31px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    position: absolute;
+    top: 87px;
+  }
+.inner-nav{
+    position: absolute;
+    top: 59.5px;
+    left: 1048px;
+    text-decoration: none;
+}
+.inner-nav > ul{
+    list-style-type: none;
+    /* float: right; */
+    display: inline;
+}
+
+.inner-nav > ul > li {
+    display: inline-block;
+    padding: 5px;
+}
+  .download-app {    
+    width: 108px;
+    height: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #77898a;
+  }
+
+  .inner-nav > ul > li > a{
+    text-decoration: none;
+    color: inherit;
+    text-decoration-color: none;
+    text-decoration-style: none;
+  }
+
+  .log-out {
+    width: 61px;
+    height: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #77898a;
+  }
+
+  .last-transaction {
+    width: 537px;
+    height: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #344647;
+    top: 126px;
+    
+  }
+  
+  .last-transaction .text-style-1 {
+    font-weight: 600;
+  }
+
+  .user-navigation {
+    font-family: SourceSansPro;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #77898a;
+    top:186px;
+    text-decoration: none;
+    text-decoration-style: none;
+  }
+  .user-navigation > a{
+      color: #77898a;
+      text-decoration: none;
+      padding: 10px;
+      margin-right: 40px;
+  }
+
+  .user-navigation > a.active,a:hover{
+    color: #344647 ;
+    border-bottom: solid;
+    border-bottom-color: #344647;
+  }
