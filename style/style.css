@@ -10,14 +10,14 @@ html {
 body{
     margin: 0%;
     padding: 0%;
+    background-color: #f7faf9;
 }
 
 /* Top-header */
 .nav-bar{
     width: 1349x;
     height: 220px;
-    /* background-color: rgb(238, 247, 24
-    7); */
+    background-color:#ffff;
     position: relative;
     overflow: hidden;
 }
@@ -151,14 +151,20 @@ body{
       display: grid;
       grid-gap: 20px;
   grid-template-areas:
+    'label1 label2'
     'expenditure profile'
+    'label3 label4'
     'transaction faq'
+    'label5 label6'
     'empty merchants';
+    /* grid-template-columns: 2fr 1fr; */
     position: absolute;
     left: 110px;
     grid-column-gap: 50px;
     grid-row-gap: 68px;
-    border-style: dotted;
+  }
+  .boxes > * {
+    border-style: solid;
   }
 
   .expenditure{
@@ -168,9 +174,33 @@ body{
         border-radius: 4px;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
         background-color: red;
-    
+        display: flex;
+        flex-direction: column;
   }
-
+  .expenditure > ul.label > li {
+      position: relative;
+      top:24px;
+      left:24px;
+      list-style-type: none;
+      display: inline;
+  }
+  
+  .expenditure > ul.expense-display > li {
+    position: relative;
+    top:43px;
+    left:35px;
+    list-style-type: none;
+    display: inline;
+}
+  .total-spent{
+      text-align: left;
+  }
+.limit{
+    margin-left: 250px;
+}
+.max-limit{
+    margin-left: 300px;
+}
   .profile{
     grid-area: profile;
     width: 515px;
@@ -188,7 +218,7 @@ body{
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
     background-color:blue;
     position: absolute;
-    top:-271px;;
+    top:-271px;
       }
 .faq{
     grid-area: faq;
@@ -206,3 +236,92 @@ body{
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
         background-color: violet;
 }
+.box-label-exp {
+    grid-area: label1;
+    color: green;
+    position: absolute;
+    top:30px;
+    display: block;
+        width: 95px;
+        height: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+  }
+  .box-label-pro{
+    grid-area: label2;
+    color: green;
+    position: absolute;
+    top:30px;
+        width: 57px;
+        height: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+    
+  }
+  .box-label-tran{
+    grid-area:label3;
+    color: green;
+    position: absolute;
+    top:-250px;
+        width: auto;
+        height: 18px;
+        font-family: SourceSansPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+  }
+  .box-label-faq{
+    grid-area: label4;
+    color: green;
+    position: absolute;
+    top:30px;
+        width: 207px;
+        height: 18px;
+        font-family: SourceSansPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+  }
+  .box-label-empty{
+    grid-area: label5;
+    color: green;
+    position: absolute;
+    top:30px;
+    /* display: block; */
+  }
+  .box-label-merch{
+    grid-area: label6;
+    color: green;
+    position: absolute;
+    top:30px;
+        width: 207px;
+        height: 18px;
+        font-family: SourceSansPro;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+  }
