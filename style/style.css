@@ -3,10 +3,16 @@
     padding: 0%;
     font-family: 'Source Sans Pro', sans-serif;
 }
+html {
+    box-sizing: border-box;
+  }
+  
 body{
     margin: 0%;
     padding: 0%;
 }
+
+/* Top-header */
 .nav-bar{
     width: 1349x;
     height: 220px;
@@ -137,3 +143,66 @@ body{
     border-bottom: solid;
     border-bottom-color: #344647;
   }
+.gap{
+    height: 70px;
+}
+  /* Boxes */
+  .boxes{
+      display: grid;
+      grid-gap: 20px;
+  grid-template-areas:
+    'expenditure profile'
+    'transaction faq'
+    'empty merchants';
+    position: absolute;
+    left: 110px;
+    grid-column-gap: 50px;
+    grid-row-gap: 68px;
+    border-style: dotted;
+  }
+
+  .expenditure{
+      grid-area: expenditure;
+        width: 516px;
+        height: 188px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+        background-color: red;
+    
+  }
+
+  .profile{
+    grid-area: profile;
+    width: 515px;
+    height: 517px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color: yellow;
+}
+
+  .transaction{
+    grid-area: transaction;
+    width: 516px;
+    height: 692px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color:blue;
+    position: absolute;
+    top:-271px;;
+      }
+.faq{
+    grid-area: faq;
+    width: 516px;
+    height: 224px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    background-color:orangered;
+}
+.merchants{
+    grid-area: merchants;
+        width: 516px;
+        height: 203px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+        background-color: violet;
+}
