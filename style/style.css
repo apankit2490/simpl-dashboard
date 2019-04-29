@@ -303,7 +303,7 @@ body{
   .transaction{
     grid-area: transaction;
     width: 516px;
-    height: 692px;
+    height: 662px;
     border-radius: 4px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
@@ -312,11 +312,9 @@ body{
     display: flex;
     flex-direction: column;
   }
-  /* .transaction > *{
-      border-style: dashed;
-  } */
+
 .orders{
-    height: 342px;
+    height: 330px;
 }
 .orders > div {
     height: 60px;
@@ -374,13 +372,13 @@ body{
     left:10px;
     width: auto;
     font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #00d1c1;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #00d1c1;
 }
 /* .successful-payment > * {
     border-style: dashed;
@@ -498,3 +496,124 @@ body{
         letter-spacing: 1px;
         color: #77898a;
   }
+  .bills{
+        width: 516px;
+        height: 143px;
+        border-radius: 4px;
+        background-color: #f7faf9;
+        display: flex;
+        flex-direction: column;
+  }
+  /* .bills > .bill-details > div {
+      border-style: dashed;
+  } */
+  .bill-icon > div{
+      position: absolute;
+        width: 24px;
+        height: 30px;
+        object-fit: contain;
+        box-shadow: 1 4px 8px 0 rgba(0, 209, 193, 0.3);
+        }
+  .bill-details{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top:20px;
+      left:-30px;
+      justify-content: space-evenly;
+  }
+  .bill-message  > .message {
+        width: 159px;
+        height: 23px;
+        font-family:'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #344647;
+        font-weight: bold;
+  }
+  .bill-message > .date{
+        width: 373px;
+        height: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #77898a;
+  }
+  .line {
+      position: relative;
+      top: 35px;
+      left: 62px;
+    width: 370px;
+    height: 2px;
+    border: solid 1px #e6ebe9;
+  }
+ .pay-now-btn{
+    position: relative;
+    top:50px;
+    left: 62px;
+ }
+  .pay-now-btn > .pay-btn {
+        
+        width: 71px;
+        height: 24px;
+        margin-right: 10px;
+        border-radius: 4px;
+        box-shadow: 1 2px 4px 0 rgba(0, 209, 193, 0.3);
+        background-color: #00d1c1;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #ffffff;
+  }
+.pay-now-btn > p{
+        display: inline;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #344647;
+      }
+#refund > div > ul > li.order-price{
+    margin-left: 360px;
+}
+
+#freshmenu > div > ul > li.order-price{
+    margin-left: 360px; 
+}
+.separator {
+    position: relative;
+    top: 55px;
+    width: 516px;
+    height: 1px;
+    background-color: #e6ebe9;
+  }
+
+.see-more-transactions{
+        position: relative;
+        top: 65px;
+        left: 25px;
+        width: 153px;
+        height: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #00d1c1;
+}
