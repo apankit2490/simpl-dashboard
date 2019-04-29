@@ -7,6 +7,7 @@
         <title>Dashboard</title>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" href="./style/style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js'></script>
     </head>
     <body>
         <div class="nav-bar">
@@ -45,7 +46,37 @@
                 <progress class="progressbar-expense" max="100" value="80"></progress>
                 <button class="pay-now"><span style="padding: 10px"> <img src="images/lock.png"> </span>PAY NOW</button>
             </div>
-            <div class="profile"></div>
+            <div class="profile">
+                <div class="profile-name">
+                    <div class="profile-icon"><img src="images/user-icon.png" srcset="images/user-icon@2x.png 2x,images/user-icon@3x.png 3x" class="user-icon">
+                        <p class="name">John Doe</p>
+                        <p class="message">Simpl Credit Score</p><span class="score"><b>3.5/10</b></span>
+                   </div>
+                   <div class="separator-2"></div>
+                </div>
+                <div class="profile-device">
+                    <div>
+                        <img src="images/mobile-icon.png"><span><p style="display:inline;margin-left: 10px;"> Oneplus 3T + 2 more</p></span>
+                    </div>
+                    <div>
+                        <p>9870763023</p>
+                    </div>
+                </div>
+                <div class="separator-2" style="left:0px;"></div>
+                <div class="profile-transaction">
+                    <div>
+                        <p>Total Transactions</p>
+                    </div>
+                    <div class="pie-chart">
+                        <div class="pie">
+                                <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="pie-legends"></div>
+                    </div>
+
+                </div>
+                <div class="your-profile">d</div>
+            </div>
             <label class="box-label-tran">TRANSACTIONS</label>
             <label class="box-label-faq">FAQ</label>
             <div class="transaction">
@@ -140,7 +171,7 @@
                                 </div>
                         </div>
                         <div class="separator"></div>
-                        <div class="see-more-transactions"><p> > See all transactions</p></div>
+                        <div class="see-more-transactions"><a href="#"><p> > See all transactions</p></a></div>
 
                 </div>
             </div>
@@ -149,5 +180,6 @@
             <label class="box-label-merch">MERCHANTS WE SUPPORT</label>
             <div class="merchants"></div>
         </section>
+        <script type="text/javascript" src="javascript/script.js"></script>
     </body>
 </html>
