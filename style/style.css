@@ -366,6 +366,33 @@ body{
 .order-more{
     margin-left: 300px;
 }
+.successful-payment{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:20px;
+    left:10px;
+    width: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #00d1c1;
+}
+/* .successful-payment > * {
+    border-style: dashed;
+} */
+.message{
+    flex-grow: 0.95;
+    flex-shrink: 1;
+}
+#holachef > div > ul > li.order-price{
+    margin-left: 370px;
+}
+
 .faq{
     grid-area: faq;
     width: 516px;
