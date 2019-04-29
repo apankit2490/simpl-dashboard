@@ -12,7 +12,13 @@ body{
     padding: 0%;
     background-color: #f7faf9;
 }
-
+.flex_components{
+    display: flex;
+    flex-direction: column;
+}
+.flex_components>*{
+    border-style: dashed;
+}
 /* Top-header */
 .nav-bar{
     width: 1349x;
@@ -882,6 +888,63 @@ body{
     font-size: 1.5em;
     text-shadow: 1px 1px #06060d;
 }
+.footer{
+        position: relative;
+        top:1250px;
+        width: 1349px;
+        height: 541px;
+        background-color: #f2f6f4;
+        display: flex;
+        flex-direction: column;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-left: 50px;
+    justify-content: space-around;
+}
+.simpl-icon > p {
+        width: 329px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #77898a;
+        margin: 10px;
+}
+.simpl-text{
+        width: auto;
+        height: 18px;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #77898a;
+        margin-bottom: 15px;
+}
+.simpl-items{
+        width: auto;
+        height: 20px;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #77898a;
+        margin: 15px 0px 15px 0px;
+
+}
+/* .links>* {
+    border-style: dashed;
+} */
+
 
 
 
