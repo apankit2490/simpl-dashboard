@@ -294,16 +294,14 @@ body{
   .profile{
     grid-area: profile;
     width: 515px;
-    height: 517px;
+    height: auto;
     border-radius: 4px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
     background-color:#ffffff;
     display: flex;
     flex-direction: column;
 }
-/* .profile > * {
-    border-style: dashed
-} */
+
 .profile-name{
     display: flex;
     flex-direction: column;
@@ -400,7 +398,72 @@ body{
 .pie-chart{
     margin-top: 24px;
     margin-left: 24px;
+    display: flex;
+    flex-direction: row;
 }
+.pie{
+    height: 100px;
+    width: 100px;
+}
+.pie-legends{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.pie-legends > ul> li.food{
+    color:#00d1c1;
+}
+.pie-legends > ul> li > p {
+    font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #77898a;
+}
+.pie-legends > ul> li.pc{
+    color:#ff9600;
+}
+.pie-legends > ul> li.clothes{
+    color:#ff5950;
+}
+.pie-legends > ul> li.travel{
+    color:#77898a;
+}
+.your-profile {
+    margin-left: 40px;
+    margin-top: 20px;  
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.your-profile > .messsage{
+        width: 127.4px;
+        height: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #00d1c1;
+      }
+.your-profile > .incomplete{
+        width: 77px;
+        height: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ff5950;
+      }
 
 
   .transaction{
